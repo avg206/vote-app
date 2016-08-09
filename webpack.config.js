@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 module.exports = {
@@ -8,6 +7,7 @@ module.exports = {
     path: `${__dirname}/public/`,
     filename: '/dist/app.bundle.js',
   },
+  devtool: 'cheap-module-eval-source-map',
   resolveLoader: {
     root: path.join(__dirname, 'node_modules'),
 
@@ -20,7 +20,10 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel?presets[]=es2015',
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015'],
+        },
       },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       {
@@ -38,13 +41,5 @@ module.exports = {
   },
   plugins: [
     new ProgressBarPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false,
-      },
-      output: {
-        comments: false,
-      },
-    }),
   ],
 };
