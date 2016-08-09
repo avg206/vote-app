@@ -10,10 +10,10 @@ const compiler = webpack(config, (err) => {
 compiler.watch({}, (err, stats) => {
   if (err) throw err;
 
-  server();
-
   console.log(stats.toString({
     chunks: false,
     colors: true,
   }));
 });
+
+server();
