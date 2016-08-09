@@ -2,8 +2,8 @@ import React from 'react';
 
 import './styles.css';
 
-import Image from '../Image';
-import RateBoard from '../RateBoard';
+import Image from '../../containers/Image';
+import RateBoard from '../../containers/RateBoard';
 
 const App = () => (
   <div>
