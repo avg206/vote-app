@@ -3,17 +3,16 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 module.exports = {
   entry: './src/app.js',
+
   output: {
     path: `${__dirname}/public/`,
     filename: '/dist/app.bundle.js',
   },
-  resolveLoader: {
-    root: path.join(__dirname, 'node_modules'),
 
-    modulesDirectories: [
-      path.join(__dirname, 'node_modules'),
-    ],
+  resolve: {
+    extensions: ['', '.js'],
   },
+
   module: {
     loaders: [
       {
@@ -39,6 +38,7 @@ module.exports = {
       },
     ],
   },
+
   plugins: [
     new ProgressBarPlugin(),
   ],
