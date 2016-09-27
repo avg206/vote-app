@@ -3,7 +3,7 @@ import React from 'react';
 import Image from '../../containers/Image';
 import RateBoard from '../../containers/RateBoard';
 
-import './styles.css';
+// import './styles.css';
 
 const App = () => (
   <div>
