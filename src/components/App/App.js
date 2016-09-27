@@ -8,7 +8,7 @@ import RateBoard from '../../containers/RateBoard';
 const App = () => (
   <div>
     <h1 className="ui center aligned header">Rate random cat</h1>
-    <div className="ui three column centered grid container">
+    <div className="ui two column centered grid container">
       <div className="column">
         <Image />
       </div>

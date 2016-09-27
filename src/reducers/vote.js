@@ -13,6 +13,9 @@ const vote = (state = initialState, action) => {
     case actions.SET_USER_COMMENT:
       return { ...state, comment: action.comment };
 
+    case actions.RATE_IMAGE:
+      return initialState;
+
     default:
       return state;
   }

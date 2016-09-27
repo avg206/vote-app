@@ -7,7 +7,6 @@ module.exports = {
     path: `${__dirname}/public/`,
     filename: '/dist/app.bundle.js',
   },
-  devtool: 'cheap-module-eval-source-map',
   resolveLoader: {
     root: path.join(__dirname, 'node_modules'),
 
