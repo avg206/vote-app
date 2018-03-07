@@ -1,17 +1,17 @@
-import * as actions from '../actions/image';
+import * as actions from '../actions/image'
 
 const initialstate = {
   src: '',
-};
+}
 
 const image = (state = initialstate, action) => {
   switch (action.type) {
     case actions.SAVE_NEW_IMAGE:
-      return { ...state, src: action.src };
+      return { ...state, src: action.src }
 
     default:
-      return state;
+      return state
   }
-};
+}
 
-export default image;
+export default image

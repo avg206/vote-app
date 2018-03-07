@@ -1,3 +1,3 @@
-export * from './vote';
-export * from './image';
-export * from './loader';
+export * from './vote'
+export * from './image'
+export * from './loader'

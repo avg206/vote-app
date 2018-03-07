@@ -1,5 +1,5 @@
-const path = require('path');
-const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const path = require('path')
+const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 module.exports = {
   entry: './src/app.js',
@@ -42,4 +42,4 @@ module.exports = {
   plugins: [
     new ProgressBarPlugin(),
   ],
-};
+}

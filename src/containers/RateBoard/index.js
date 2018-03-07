@@ -1,3 +1,3 @@
-import RateBoard from './RateBoard';
+import RateBoard from './RateBoard'
 
-export default RateBoard;
+export default RateBoard
