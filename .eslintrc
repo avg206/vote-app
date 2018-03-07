@@ -1,6 +1,10 @@
 {
-  "extends": "airbnb",
+  "env": {
+    "jest": true,
+    "browser": true
+  },
+  "extends": ["standard", "standard-react"],
   "rules": {
-    "no-console": 0
+    "comma-dangle": [2, "always-multiline"]
   }
 }
